@@ -1,0 +1,18 @@
+2026-05-02 13:08:46,512 - aiogram.dispatcher - INFO - Start polling
+2026-05-02 13:08:46,741 - aiogram.dispatcher - INFO - Run polling for bot @health_and_weight_tracker_bot id=8667796470 - 'Health Tracker'
+2026-05-02 13:08:55,856 - aiogram.event - INFO - Update id=587490044 is handled. Duration 162 ms by bot id=8667796470
+2026-05-02 13:08:59,512 - aiogram.event - INFO - Update id=587490045 is handled. Duration 92 ms by bot id=8667796470
+2026-05-02 13:16:28,001 - aiogram.dispatcher - INFO - Polling stopped
+2026-05-02 13:16:28,002 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-05-02 13:16:28,002 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8667796470)
+2026-05-02 13:16:28,268 - aiogram.dispatcher - INFO - Polling stopped for bot @health_and_weight_tracker_bot id=8667796470 - 'Health Tracker'
+2026-05-02 13:16:31,523 - aiogram.dispatcher - INFO - Start polling
+2026-05-02 13:16:31,749 - aiogram.dispatcher - INFO - Run polling for bot @health_and_weight_tracker_bot id=8667796470 - 'Health Tracker'
+2026-05-02 13:16:44,369 - aiogram.event - INFO - Update id=587490046 is handled. Duration 230 ms by bot id=8667796470
+2026-05-02 13:16:51,949 - aiogram.event - INFO - Update id=587490047 is handled. Duration 194 ms by bot id=8667796470
+2026-05-02 13:16:56,307 - aiogram.event - INFO - Update id=587490048 is handled. Duration 101 ms by bot id=8667796470
+2026-05-02 13:18:22,627 - aiogram.event - INFO - Update id=587490049 is handled. Duration 113 ms by bot id=8667796470
+2026-05-02 13:18:51,276 - aiogram.dispatcher - INFO - Polling stopped
+2026-05-02 13:18:51,277 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-05-02 13:18:51,277 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8667796470)
+2026-05-02 13:18:51,538 - aiogram.dispatcher - INFO - Polling stopped for bot @health_and_weight_tracker_bot id=8667796470 - 'Health Tracker'
