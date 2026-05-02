@@ -1,2 +1,3 @@
 weight_bot_env/
-.env
+.env/
+bot.log
