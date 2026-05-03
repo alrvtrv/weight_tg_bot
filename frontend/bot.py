@@ -14,7 +14,9 @@ from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import State, StatesGroup
 
 
-SAVE_WEIGHT_URL = "http://127.0.0.1:8000/save-weight"
+BASE_URL = "http://127.0.0.1:8000"
+SAVE_WEIGHT_URL = f"{BASE_URL}/save-weight"
+HISTORY_URL = f"{BASE_URL}/weight"
 
 # Загружаем переменные окружения
 load_dotenv()
@@ -74,7 +76,8 @@ def get_main_keyboard() -> InlineKeyboardMarkup:
     'Функция вызывает кнопки для выбора пользователем'
     keyboard = [
         [
-            InlineKeyboardButton(text="Weight", callback_data="weight")
+            InlineKeyboardButton(text="Weight", callback_data="weight"),
+            InlineKeyboardButton(text="History", callback_data="history"),
         ]
     ]
     return InlineKeyboardMarkup(inline_keyboard=keyboard)
@@ -155,6 +158,39 @@ async def process_weight(message: Message, state: FSMContext):
         logger.error(f"Error processing weight: {e}")
         await message.answer("Something went wrong. Please try again.")
         await state.clear()
+
+@dp.callback_query(F.data == "history")
+async def handle_history_button(callback: CallbackQuery):
+    """Хендлер нажатия на кнопку History"""
+    user_id = callback.from_user.id
+    
+    async with httpx.AsyncClient() as client:
+        try:
+            # Делаем GET запрос к FastAPI: /weight/{user_id}
+            response = await client.get(f"{HISTORY_URL}/{user_id}", params={"limit": 10})
+            
+            if response.status_code == 200:
+                data = response.json()
+                weights = data.get("weights", [])
+                
+                if not weights:
+                    text = "You haven't recorded any weights yet! 🕸️"
+                else:
+                    text = "📋 **Your Last 10 Records:**\n\n"
+                    for entry in weights:
+                        # Форматируем дату для красоты
+                        entry_date = entry['date']
+                        text += f"• {entry_date}: **{entry['weight']} kg**\n"
+                
+                await callback.message.edit_text(text, parse_mode="Markdown", reply_markup=get_main_keyboard())
+            else:
+                await callback.answer("Error fetching data from server.")
+        
+        except Exception as e:
+            logger.error(f"History error: {e}")
+            await callback.answer("Server connection error.")
+    
+    await callback.answer()
 
 async def main():
     """Главная функция"""

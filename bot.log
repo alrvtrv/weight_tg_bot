@@ -1388,3 +1388,145 @@ AttributeError: type object 'UserStates' has no attribute 'get'
 2026-05-03 20:28:00,378 - aiogram.event - INFO - Update id=191451477 is handled. Duration 197 ms by bot id=8769370979
 2026-05-03 20:28:03,528 - httpx - INFO - HTTP Request: POST http://127.0.0.1:8000/save-weight "HTTP/1.1 200 OK"
 2026-05-03 20:28:03,766 - aiogram.event - INFO - Update id=191451478 is handled. Duration 819 ms by bot id=8769370979
+2026-05-03 20:45:22,631 - aiogram.dispatcher - INFO - Polling stopped
+2026-05-03 20:45:22,632 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-05-03 20:45:22,632 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8769370979)
+2026-05-03 20:45:22,896 - aiogram.dispatcher - INFO - Polling stopped for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-05-03 20:45:26,491 - aiogram.dispatcher - INFO - Start polling
+2026-05-03 20:45:26,620 - aiogram.dispatcher - INFO - Polling stopped
+2026-05-03 20:45:45,923 - aiogram.dispatcher - INFO - Start polling
+2026-05-03 20:45:46,156 - aiogram.dispatcher - INFO - Polling stopped
+2026-05-03 20:47:41,314 - aiogram.dispatcher - INFO - Start polling
+2026-05-03 20:47:41,490 - aiogram.dispatcher - INFO - Run polling for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-05-03 20:47:48,125 - aiogram.event - INFO - Update id=191451479 is not handled. Duration 112 ms by bot id=8769370979
+2026-05-03 20:47:48,126 - aiogram.event - ERROR - Cause exception while process update id=191451479 by bot id=8769370979
+TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [None]
+Traceback (most recent call last):
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiohttp\connector.py", line 1325, in _wrap_create_connection
+    return await self._loop.create_connection(*args, **kwargs, sock=sock)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alrvt\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 1188, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        ssl_shutdown_timeout=ssl_shutdown_timeout)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alrvt\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 1221, in _create_connection_transport
+    await waiter
+  File "C:\Users\alrvt\AppData\Local\Programs\Python\Python313\Lib\asyncio\sslproto.py", line 581, in _on_handshake_complete
+    raise handshake_exc
+ConnectionResetError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 167, in make_request
+    async with session.post(
+               ~~~~~~~~~~~~^
+        url,
+        ^^^^
+        data=form,
+        ^^^^^^^^^^
+        timeout=self.timeout if timeout is None else timeout,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ) as resp:
+    ^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiohttp\client.py", line 1521, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiohttp\client.py", line 788, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiohttp\client.py", line 742, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        req, traces=traces, timeout=real_timeout
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiohttp\connector.py", line 672, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiohttp\connector.py", line 1251, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiohttp\connector.py", line 1623, in _create_direct_connection
+    raise last_exc
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiohttp\connector.py", line 1592, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiohttp\connector.py", line 1333, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [None]
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 163, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 155, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 183, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "d:\AV\Education\Master\Mentor Seminar\weight_tg_bot\frontend\bot.py", line 94, in start_handler
+    await message.answer(
+    ...<4 lines>...
+    )
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\methods\base.py", line 82, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\client\bot.py", line 493, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\client\session\base.py", line 259, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 176, in make_request
+    raise TelegramNetworkError(method=method, message=f"{type(e).__name__}: {e}") from e
+aiogram.exceptions.TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [None]
+2026-05-03 20:48:08,072 - aiogram.dispatcher - INFO - Polling stopped
+2026-05-03 20:48:08,074 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-05-03 20:48:08,074 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8769370979)
+2026-05-03 20:48:08,333 - aiogram.dispatcher - INFO - Polling stopped for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'

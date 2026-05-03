@@ -1,9 +1,9 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Query
 from pydantic import BaseModel
 import logging
 from datetime import date
 from contextlib import asynccontextmanager
-from sqlalchemy import Column, Integer, Float, String, Date
+from sqlalchemy import Column, Integer, Float, String, Date, select
 from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession
 from sqlalchemy.orm import sessionmaker, declarative_base
 
@@ -69,3 +69,32 @@ async def save_weight(data: WeightData):
 
         # Сохраняем изменения в БД
         await session.commit()
+
+########################################################################################
+# Вывод истории по юзеру
+########################################################################################
+    
+@app.get("/weight/{user_id}")
+async def get_user_weight(user_id: int, limit: int = Query(10, ge=1, le=50)):
+    async with AsyncSessionLocal() as session:
+        result = await session.execute(
+            select(WeightRecord)
+            .where(WeightRecord.user_id == user_id)
+            .order_by(WeightRecord.date.desc(), WeightRecord.id.desc())
+            .limit(limit)
+        )
+        records = result.scalars().all()
+
+        return {
+            "user_id": user_id,
+            "total_records": len(records),
+            "weights": [
+                {
+                    "id": r.id,
+                    "weight": r.weight,
+                    "date": r.date.isoformat(),
+                    "username": r.username
+                }
+                for r in records
+            ]
+        }
