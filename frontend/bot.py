@@ -1,25 +1,17 @@
 import asyncio
 import logging
 import json
-from datetime import datetime
+from datetime import datetime, date
 from pathlib import Path
 from dotenv import load_dotenv
 import os
+import httpx
 
 from aiogram import Bot, Dispatcher, F
-from aiogram.types import Message, CallbackQuery
+from aiogram.types import Message, CallbackQuery, InlineKeyboardMarkup, InlineKeyboardButton
 from aiogram.filters import Command
 from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import State, StatesGroup
-
-import httpx
-from aiogram import Bot, Dispatcher, html
-from aiogram.client.default import DefaultBotProperties
-from aiogram.enums import ParseMode
-from aiogram.filters import CommandStart
-from aiogram.types import Message, CallbackQuery, InlineKeyboardMarkup, InlineKeyboardButton
-from dotenv import load_dotenv
-from datetime import date
 
 
 SAVE_WEIGHT_URL = "http://127.0.0.1:8000/save-weight"
@@ -130,6 +122,9 @@ async def process_weight(message: Message, state: FSMContext):
         if weight <= 0 or weight > 300:
             raise ValueError
 
+        # Получаем текущую дату
+        current_date = datetime.now().date().isoformat()
+
         # Отправка в FastAPI
         async with httpx.AsyncClient() as client:
             response = await client.post(
@@ -137,6 +132,7 @@ async def process_weight(message: Message, state: FSMContext):
                 json={
                     "user_id": message.from_user.id,
                     "weight": weight,
+                    "date": current_date,
                     "username": message.from_user.username
                 },
                 timeout=10.0

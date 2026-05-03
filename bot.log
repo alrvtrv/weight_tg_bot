@@ -1,0 +1,1390 @@
+2026-05-02 13:08:46,512 - aiogram.dispatcher - INFO - Start polling
+2026-05-02 13:08:46,741 - aiogram.dispatcher - INFO - Run polling for bot @health_and_weight_tracker_bot id=8667796470 - 'Health Tracker'
+2026-05-02 13:08:55,856 - aiogram.event - INFO - Update id=587490044 is handled. Duration 162 ms by bot id=8667796470
+2026-05-02 13:08:59,512 - aiogram.event - INFO - Update id=587490045 is handled. Duration 92 ms by bot id=8667796470
+2026-05-02 13:16:28,001 - aiogram.dispatcher - INFO - Polling stopped
+2026-05-02 13:16:28,002 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-05-02 13:16:28,002 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8667796470)
+2026-05-02 13:16:28,268 - aiogram.dispatcher - INFO - Polling stopped for bot @health_and_weight_tracker_bot id=8667796470 - 'Health Tracker'
+2026-05-02 13:16:31,523 - aiogram.dispatcher - INFO - Start polling
+2026-05-02 13:16:31,749 - aiogram.dispatcher - INFO - Run polling for bot @health_and_weight_tracker_bot id=8667796470 - 'Health Tracker'
+2026-05-02 13:16:44,369 - aiogram.event - INFO - Update id=587490046 is handled. Duration 230 ms by bot id=8667796470
+2026-05-02 13:16:51,949 - aiogram.event - INFO - Update id=587490047 is handled. Duration 194 ms by bot id=8667796470
+2026-05-02 13:16:56,307 - aiogram.event - INFO - Update id=587490048 is handled. Duration 101 ms by bot id=8667796470
+2026-05-02 13:18:22,627 - aiogram.event - INFO - Update id=587490049 is handled. Duration 113 ms by bot id=8667796470
+2026-05-02 13:18:51,276 - aiogram.dispatcher - INFO - Polling stopped
+2026-05-02 13:18:51,277 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-05-02 13:18:51,277 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8667796470)
+2026-05-02 13:18:51,538 - aiogram.dispatcher - INFO - Polling stopped for bot @health_and_weight_tracker_bot id=8667796470 - 'Health Tracker'
+2026-05-02 13:28:37,939 - aiogram.dispatcher - INFO - Start polling
+2026-05-02 13:28:39,819 - aiogram.dispatcher - INFO - Polling stopped
+2026-05-02 13:29:07,751 - aiogram.dispatcher - INFO - Start polling
+2026-05-02 13:29:07,916 - aiogram.dispatcher - INFO - Polling stopped
+2026-05-02 13:31:54,595 - aiogram.dispatcher - INFO - Start polling
+2026-05-02 13:31:57,398 - aiogram.dispatcher - INFO - Run polling for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-05-02 13:32:59,784 - aiogram.event - INFO - Update id=191451384 is handled. Duration 348 ms by bot id=8769370979
+2026-05-02 13:33:02,096 - aiogram.event - INFO - Update id=191451385 is handled. Duration 180 ms by bot id=8769370979
+2026-05-02 13:33:03,318 - __main__ - INFO - alvtrv: sdasd
+2026-05-02 13:33:03,424 - aiogram.event - INFO - Update id=191451386 is handled. Duration 106 ms by bot id=8769370979
+2026-05-02 13:33:07,713 - aiogram.event - INFO - Update id=191451387 is handled. Duration 84 ms by bot id=8769370979
+2026-05-02 13:34:44,652 - aiogram.dispatcher - INFO - Polling stopped
+2026-05-02 13:34:44,653 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-05-02 13:34:44,653 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8769370979)
+2026-05-02 13:34:44,909 - aiogram.dispatcher - INFO - Polling stopped for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-05-02 15:19:29,074 - aiogram.dispatcher - INFO - Start polling
+2026-05-02 15:19:29,305 - aiogram.dispatcher - INFO - Run polling for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-05-02 15:19:46,419 - aiogram.event - INFO - Update id=191451388 is handled. Duration 198 ms by bot id=8769370979
+2026-05-02 15:19:48,122 - aiogram.event - INFO - Update id=191451389 is not handled. Duration 2 ms by bot id=8769370979
+2026-05-02 15:19:48,123 - aiogram.event - ERROR - Cause exception while process update id=191451389 by bot id=8769370979
+TypeError: 'StatesGroupMeta' object does not support item assignment
+Traceback (most recent call last):
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 163, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 155, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 183, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "d:\AV\Education\Master\Mentor Seminar\weight_tg_bot\frontend\bot.py", line 110, in handle_weight_button
+    UserStates[user_id] = {
+    ~~~~~~~~~~^^^^^^^^^
+TypeError: 'StatesGroupMeta' object does not support item assignment
+2026-05-02 15:19:49,697 - aiogram.event - INFO - Update id=191451390 is not handled. Duration 1 ms by bot id=8769370979
+2026-05-02 15:19:49,697 - aiogram.event - ERROR - Cause exception while process update id=191451390 by bot id=8769370979
+TypeError: 'StatesGroupMeta' object does not support item assignment
+Traceback (most recent call last):
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 163, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 155, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 183, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "d:\AV\Education\Master\Mentor Seminar\weight_tg_bot\frontend\bot.py", line 110, in handle_weight_button
+    UserStates[user_id] = {
+    ~~~~~~~~~~^^^^^^^^^
+TypeError: 'StatesGroupMeta' object does not support item assignment
+2026-05-02 15:19:49,918 - aiogram.event - INFO - Update id=191451391 is not handled. Duration 1 ms by bot id=8769370979
+2026-05-02 15:19:49,919 - aiogram.event - ERROR - Cause exception while process update id=191451391 by bot id=8769370979
+TypeError: 'StatesGroupMeta' object does not support item assignment
+Traceback (most recent call last):
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 163, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 155, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 183, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "d:\AV\Education\Master\Mentor Seminar\weight_tg_bot\frontend\bot.py", line 110, in handle_weight_button
+    UserStates[user_id] = {
+    ~~~~~~~~~~^^^^^^^^^
+TypeError: 'StatesGroupMeta' object does not support item assignment
+2026-05-02 15:20:30,966 - aiogram.event - INFO - Update id=191451392 is not handled. Duration 0 ms by bot id=8769370979
+2026-05-02 15:20:30,967 - aiogram.event - ERROR - Cause exception while process update id=191451392 by bot id=8769370979
+TypeError: 'StatesGroupMeta' object does not support item assignment
+Traceback (most recent call last):
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 163, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 155, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 183, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "d:\AV\Education\Master\Mentor Seminar\weight_tg_bot\frontend\bot.py", line 110, in handle_weight_button
+    UserStates[user_id] = {
+    ~~~~~~~~~~^^^^^^^^^
+TypeError: 'StatesGroupMeta' object does not support item assignment
+2026-05-02 15:20:33,618 - aiogram.event - INFO - Update id=191451393 is not handled. Duration 1 ms by bot id=8769370979
+2026-05-02 15:20:33,618 - aiogram.event - ERROR - Cause exception while process update id=191451393 by bot id=8769370979
+TypeError: 'StatesGroupMeta' object does not support item assignment
+Traceback (most recent call last):
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 163, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 155, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 183, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "d:\AV\Education\Master\Mentor Seminar\weight_tg_bot\frontend\bot.py", line 110, in handle_weight_button
+    UserStates[user_id] = {
+    ~~~~~~~~~~^^^^^^^^^
+TypeError: 'StatesGroupMeta' object does not support item assignment
+2026-05-02 15:20:33,788 - aiogram.event - INFO - Update id=191451394 is not handled. Duration 0 ms by bot id=8769370979
+2026-05-02 15:20:33,788 - aiogram.event - ERROR - Cause exception while process update id=191451394 by bot id=8769370979
+TypeError: 'StatesGroupMeta' object does not support item assignment
+Traceback (most recent call last):
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 163, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 155, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 183, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "d:\AV\Education\Master\Mentor Seminar\weight_tg_bot\frontend\bot.py", line 110, in handle_weight_button
+    UserStates[user_id] = {
+    ~~~~~~~~~~^^^^^^^^^
+TypeError: 'StatesGroupMeta' object does not support item assignment
+2026-05-02 15:20:37,964 - aiogram.event - INFO - Update id=191451395 is not handled. Duration 0 ms by bot id=8769370979
+2026-05-02 15:20:40,140 - aiogram.event - INFO - Update id=191451396 is handled. Duration 99 ms by bot id=8769370979
+2026-05-02 15:20:41,027 - aiogram.event - INFO - Update id=191451397 is not handled. Duration 0 ms by bot id=8769370979
+2026-05-02 15:20:41,028 - aiogram.event - ERROR - Cause exception while process update id=191451397 by bot id=8769370979
+TypeError: 'StatesGroupMeta' object does not support item assignment
+Traceback (most recent call last):
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 163, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 155, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 183, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "d:\AV\Education\Master\Mentor Seminar\weight_tg_bot\frontend\bot.py", line 110, in handle_weight_button
+    UserStates[user_id] = {
+    ~~~~~~~~~~^^^^^^^^^
+TypeError: 'StatesGroupMeta' object does not support item assignment
+2026-05-02 15:23:52,267 - aiogram.dispatcher - INFO - Polling stopped
+2026-05-02 15:23:52,268 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-05-02 15:23:52,268 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8769370979)
+2026-05-02 15:23:52,526 - aiogram.dispatcher - INFO - Polling stopped for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-05-02 15:23:55,018 - aiogram.dispatcher - INFO - Start polling
+2026-05-02 15:23:55,220 - aiogram.dispatcher - INFO - Run polling for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-05-02 15:24:00,538 - aiogram.event - INFO - Update id=191451398 is not handled. Duration 1 ms by bot id=8769370979
+2026-05-02 15:24:00,539 - aiogram.event - ERROR - Cause exception while process update id=191451398 by bot id=8769370979
+TypeError: 'StatesGroupMeta' object does not support item assignment
+Traceback (most recent call last):
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 163, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 155, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 183, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "d:\AV\Education\Master\Mentor Seminar\weight_tg_bot\frontend\bot.py", line 111, in handle_weight_button
+    UserStates[user_id] = {
+    ~~~~~~~~~~^^^^^^^^^
+TypeError: 'StatesGroupMeta' object does not support item assignment
+2026-05-02 15:24:04,993 - aiogram.event - INFO - Update id=191451399 is handled. Duration 240 ms by bot id=8769370979
+2026-05-02 15:24:06,003 - aiogram.event - INFO - Update id=191451400 is not handled. Duration 1 ms by bot id=8769370979
+2026-05-02 15:24:06,004 - aiogram.event - ERROR - Cause exception while process update id=191451400 by bot id=8769370979
+TypeError: 'StatesGroupMeta' object does not support item assignment
+Traceback (most recent call last):
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 163, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 155, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 183, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "d:\AV\Education\Master\Mentor Seminar\weight_tg_bot\frontend\bot.py", line 111, in handle_weight_button
+    UserStates[user_id] = {
+    ~~~~~~~~~~^^^^^^^^^
+TypeError: 'StatesGroupMeta' object does not support item assignment
+2026-05-02 15:28:13,916 - aiogram.dispatcher - INFO - Polling stopped
+2026-05-02 15:28:13,917 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-05-02 15:28:13,917 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8769370979)
+2026-05-02 15:28:14,167 - aiogram.dispatcher - INFO - Polling stopped for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-05-02 15:28:17,437 - aiogram.dispatcher - INFO - Start polling
+2026-05-02 15:28:17,675 - aiogram.dispatcher - INFO - Run polling for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-05-02 15:28:31,896 - aiogram.event - INFO - Update id=191451401 is handled. Duration 193 ms by bot id=8769370979
+2026-05-02 15:28:33,194 - aiogram.event - INFO - Update id=191451402 is not handled. Duration 1 ms by bot id=8769370979
+2026-05-02 15:28:33,195 - aiogram.event - ERROR - Cause exception while process update id=191451402 by bot id=8769370979
+TypeError: 'StatesGroupMeta' object does not support item assignment
+Traceback (most recent call last):
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 163, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 155, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 183, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "d:\AV\Education\Master\Mentor Seminar\weight_tg_bot\frontend\bot.py", line 111, in handle_weight_button
+    UserStates[user_id] = {
+    ~~~~~~~~~~^^^^^^^^^
+TypeError: 'StatesGroupMeta' object does not support item assignment
+2026-05-02 15:36:11,145 - aiogram.dispatcher - INFO - Polling stopped
+2026-05-02 15:36:11,146 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-05-02 15:36:11,146 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8769370979)
+2026-05-02 15:36:11,405 - aiogram.dispatcher - INFO - Polling stopped for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-05-02 15:36:14,136 - aiogram.dispatcher - INFO - Start polling
+2026-05-02 15:36:14,405 - aiogram.dispatcher - INFO - Run polling for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-05-02 15:36:22,468 - aiogram.event - INFO - Update id=191451403 is not handled. Duration 19 ms by bot id=8769370979
+2026-05-02 15:36:22,468 - aiogram.event - ERROR - Cause exception while process update id=191451403 by bot id=8769370979
+TypeError: BaseModel.__init__() takes 1 positional argument but 2 were given
+Traceback (most recent call last):
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 163, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 155, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 183, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "d:\AV\Education\Master\Mentor Seminar\weight_tg_bot\frontend\bot.py", line 99, in start_handler
+    reply_markup=get_main_keyboard()
+  File "d:\AV\Education\Master\Mentor Seminar\weight_tg_bot\frontend\bot.py", line 86, in get_main_keyboard
+    return InlineKeyboardMarkup(keyboard)
+TypeError: BaseModel.__init__() takes 1 positional argument but 2 were given
+2026-05-02 15:38:55,096 - aiogram.dispatcher - INFO - Polling stopped
+2026-05-02 15:38:55,097 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-05-02 15:38:55,097 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8769370979)
+2026-05-02 15:38:55,352 - aiogram.dispatcher - INFO - Polling stopped for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-05-02 15:38:58,623 - aiogram.dispatcher - INFO - Start polling
+2026-05-02 15:38:58,774 - aiogram.dispatcher - INFO - Run polling for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-05-02 15:39:08,991 - aiogram.event - INFO - Update id=191451404 is not handled. Duration 9 ms by bot id=8769370979
+2026-05-02 15:39:08,992 - aiogram.event - ERROR - Cause exception while process update id=191451404 by bot id=8769370979
+TypeError: BaseModel.__init__() takes 1 positional argument but 2 were given
+Traceback (most recent call last):
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 163, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 155, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 183, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "d:\AV\Education\Master\Mentor Seminar\weight_tg_bot\frontend\bot.py", line 101, in start_handler
+    reply_markup=get_main_keyboard()
+  File "d:\AV\Education\Master\Mentor Seminar\weight_tg_bot\frontend\bot.py", line 88, in get_main_keyboard
+    return InlineKeyboardMarkup(keyboard)
+TypeError: BaseModel.__init__() takes 1 positional argument but 2 were given
+2026-05-02 15:40:10,756 - aiogram.dispatcher - INFO - Polling stopped
+2026-05-02 15:40:10,756 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-05-02 15:40:10,756 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8769370979)
+2026-05-02 15:40:11,017 - aiogram.dispatcher - INFO - Polling stopped for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-05-02 15:40:13,400 - aiogram.dispatcher - INFO - Start polling
+2026-05-02 15:40:13,629 - aiogram.dispatcher - INFO - Run polling for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-05-02 15:40:26,523 - aiogram.event - INFO - Update id=191451405 is handled. Duration 190 ms by bot id=8769370979
+2026-05-02 15:40:28,481 - aiogram.event - INFO - Update id=191451406 is not handled. Duration 1 ms by bot id=8769370979
+2026-05-02 15:40:28,482 - aiogram.event - ERROR - Cause exception while process update id=191451406 by bot id=8769370979
+TypeError: 'StatesGroupMeta' object does not support item assignment
+Traceback (most recent call last):
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 163, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 155, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 183, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "d:\AV\Education\Master\Mentor Seminar\weight_tg_bot\frontend\bot.py", line 111, in handle_weight_button
+    UserStates[user_id] = {
+    ~~~~~~~~~~^^^^^^^^^
+TypeError: 'StatesGroupMeta' object does not support item assignment
+2026-05-02 15:40:29,492 - aiogram.event - INFO - Update id=191451407 is not handled. Duration 0 ms by bot id=8769370979
+2026-05-02 15:40:29,493 - aiogram.event - ERROR - Cause exception while process update id=191451407 by bot id=8769370979
+TypeError: 'StatesGroupMeta' object does not support item assignment
+Traceback (most recent call last):
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 163, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 155, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 183, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "d:\AV\Education\Master\Mentor Seminar\weight_tg_bot\frontend\bot.py", line 111, in handle_weight_button
+    UserStates[user_id] = {
+    ~~~~~~~~~~^^^^^^^^^
+TypeError: 'StatesGroupMeta' object does not support item assignment
+2026-05-02 15:43:56,441 - aiogram.dispatcher - INFO - Polling stopped
+2026-05-02 15:43:56,442 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-05-02 15:43:56,442 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8769370979)
+2026-05-02 15:43:56,708 - aiogram.dispatcher - INFO - Polling stopped for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-05-02 15:43:59,454 - aiogram.dispatcher - INFO - Start polling
+2026-05-02 15:43:59,668 - aiogram.dispatcher - INFO - Run polling for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-05-02 15:44:09,415 - aiogram.event - INFO - Update id=191451408 is handled. Duration 220 ms by bot id=8769370979
+2026-05-02 15:44:11,209 - aiogram.event - INFO - Update id=191451409 is handled. Duration 146 ms by bot id=8769370979
+2026-05-02 15:44:14,552 - aiogram.event - INFO - Update id=191451410 is handled. Duration 112 ms by bot id=8769370979
+2026-05-02 15:50:41,730 - aiogram.dispatcher - INFO - Polling stopped
+2026-05-02 15:50:41,730 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-05-02 15:50:41,731 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8769370979)
+2026-05-02 15:50:41,985 - aiogram.dispatcher - INFO - Polling stopped for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-05-02 15:50:44,380 - aiogram.dispatcher - INFO - Start polling
+2026-05-02 15:50:44,585 - aiogram.dispatcher - INFO - Run polling for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-05-02 15:50:53,035 - aiogram.event - INFO - Update id=191451411 is handled. Duration 247 ms by bot id=8769370979
+2026-05-02 15:50:55,005 - aiogram.event - INFO - Update id=191451412 is handled. Duration 346 ms by bot id=8769370979
+2026-05-02 15:50:57,278 - httpx - INFO - HTTP Request: POST http://127.0.0.1:8000/save-weight "HTTP/1.1 200 OK"
+2026-05-02 15:50:57,485 - aiogram.event - INFO - Update id=191451413 is handled. Duration 878 ms by bot id=8769370979
+2026-05-02 15:51:03,799 - aiogram.event - INFO - Update id=191451414 is handled. Duration 100 ms by bot id=8769370979
+2026-05-02 15:51:06,423 - aiogram.event - INFO - Update id=191451415 is handled. Duration 220 ms by bot id=8769370979
+2026-05-02 15:51:08,679 - httpx - INFO - HTTP Request: POST http://127.0.0.1:8000/save-weight "HTTP/1.1 200 OK"
+2026-05-02 15:51:08,881 - aiogram.event - INFO - Update id=191451416 is handled. Duration 746 ms by bot id=8769370979
+2026-05-02 15:52:38,405 - aiogram.dispatcher - INFO - Polling stopped
+2026-05-02 15:52:38,406 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-05-02 15:52:38,406 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8769370979)
+2026-05-02 15:52:38,661 - aiogram.dispatcher - INFO - Polling stopped for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-05-02 15:52:41,150 - aiogram.dispatcher - INFO - Start polling
+2026-05-02 15:52:41,290 - aiogram.dispatcher - INFO - Run polling for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-05-02 15:52:45,615 - aiogram.event - INFO - Update id=191451417 is handled. Duration 200 ms by bot id=8769370979
+2026-05-02 15:52:47,289 - aiogram.event - INFO - Update id=191451418 is handled. Duration 171 ms by bot id=8769370979
+2026-05-02 15:52:49,183 - httpx - INFO - HTTP Request: POST http://127.0.0.1:8000/save-weight "HTTP/1.1 200 OK"
+2026-05-02 15:52:49,282 - aiogram.event - INFO - Update id=191451419 is handled. Duration 658 ms by bot id=8769370979
+2026-05-02 15:52:53,545 - aiogram.event - INFO - Update id=191451420 is handled. Duration 91 ms by bot id=8769370979
+2026-05-02 15:52:54,853 - aiogram.event - INFO - Update id=191451421 is handled. Duration 180 ms by bot id=8769370979
+2026-05-02 15:52:56,900 - aiogram.event - INFO - Update id=191451422 is not handled. Duration 1 ms by bot id=8769370979
+2026-05-02 15:52:56,901 - aiogram.event - ERROR - Cause exception while process update id=191451422 by bot id=8769370979
+ValueError: 
+Traceback (most recent call last):
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 163, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 155, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 183, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "d:\AV\Education\Master\Mentor Seminar\weight_tg_bot\frontend\bot.py", line 129, in process_weight
+    raise ValueError
+ValueError
+2026-05-02 15:57:23,799 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-05-02 15:57:23,814 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8769370979)
+2026-05-02 17:16:33,796 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorDNSError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2026-05-02 17:16:33,832 - aiogram.dispatcher - WARNING - Sleep for 1.342164 seconds and try again... (tryings = 1, bot id = 8769370979)
+2026-05-02 17:16:35,188 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorDNSError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2026-05-02 17:16:35,188 - aiogram.dispatcher - WARNING - Sleep for 1.667630 seconds and try again... (tryings = 2, bot id = 8769370979)
+2026-05-02 17:16:36,874 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorDNSError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2026-05-02 17:16:36,874 - aiogram.dispatcher - WARNING - Sleep for 2.097895 seconds and try again... (tryings = 3, bot id = 8769370979)
+2026-05-02 17:28:56,039 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-05-02 17:28:56,042 - aiogram.dispatcher - WARNING - Sleep for 2.778874 seconds and try again... (tryings = 4, bot id = 8769370979)
+2026-05-02 17:29:08,971 - aiogram.dispatcher - INFO - Connection established (tryings = 5, bot id = 8769370979)
+2026-05-02 17:30:24,457 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-05-02 17:30:24,474 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8769370979)
+2026-05-02 17:30:27,747 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-05-02 17:30:27,748 - aiogram.dispatcher - WARNING - Sleep for 1.232063 seconds and try again... (tryings = 1, bot id = 8769370979)
+2026-05-02 17:30:39,127 - aiogram.dispatcher - INFO - Connection established (tryings = 2, bot id = 8769370979)
+2026-05-02 17:30:59,561 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-05-02 17:30:59,564 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8769370979)
+2026-05-02 17:31:10,724 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 8769370979)
+2026-05-02 17:31:12,770 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-05-02 17:31:12,771 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8769370979)
+2026-05-02 17:31:23,912 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 8769370979)
+2026-05-02 17:31:24,106 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-05-02 17:31:24,108 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8769370979)
+2026-05-02 17:31:46,149 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The semaphore timeout period has expired]
+2026-05-02 17:31:46,150 - aiogram.dispatcher - WARNING - Sleep for 1.206690 seconds and try again... (tryings = 1, bot id = 8769370979)
+2026-05-02 17:31:52,429 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [None]
+2026-05-02 17:31:52,430 - aiogram.dispatcher - WARNING - Sleep for 1.718377 seconds and try again... (tryings = 2, bot id = 8769370979)
+2026-05-02 17:32:04,408 - aiogram.dispatcher - INFO - Connection established (tryings = 3, bot id = 8769370979)
+2026-05-02 17:32:13,294 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-05-02 17:32:13,298 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8769370979)
+2026-05-02 17:32:24,459 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 8769370979)
+2026-05-02 17:42:47,191 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-05-02 17:42:47,194 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8769370979)
+2026-05-02 17:54:04,498 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The network location cannot be reached. For information about network troubleshooting, see Windows Help]
+2026-05-02 17:54:04,498 - aiogram.dispatcher - WARNING - Sleep for 1.292267 seconds and try again... (tryings = 1, bot id = 8769370979)
+2026-05-02 17:54:05,797 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The network location cannot be reached. For information about network troubleshooting, see Windows Help]
+2026-05-02 17:54:05,798 - aiogram.dispatcher - WARNING - Sleep for 1.807135 seconds and try again... (tryings = 2, bot id = 8769370979)
+2026-05-02 17:54:07,618 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The network location cannot be reached. For information about network troubleshooting, see Windows Help]
+2026-05-02 17:54:07,618 - aiogram.dispatcher - WARNING - Sleep for 2.390958 seconds and try again... (tryings = 3, bot id = 8769370979)
+2026-05-02 23:17:11,547 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2026-05-02 23:17:11,548 - aiogram.dispatcher - WARNING - Sleep for 2.980230 seconds and try again... (tryings = 4, bot id = 8769370979)
+2026-05-02 23:17:15,836 - aiogram.dispatcher - INFO - Connection established (tryings = 5, bot id = 8769370979)
+2026-05-02 23:17:15,845 - aiogram.event - INFO - Update id=191451423 is not handled. Duration 7 ms by bot id=8769370979
+2026-05-02 23:17:16,106 - aiogram.event - INFO - Update id=191451424 is handled. Duration 266 ms by bot id=8769370979
+2026-05-02 23:39:52,698 - aiogram.dispatcher - INFO - Polling stopped
+2026-05-02 23:39:52,700 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-05-02 23:39:52,700 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8769370979)
+2026-05-02 23:39:52,961 - aiogram.dispatcher - INFO - Polling stopped for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-05-02 23:39:59,032 - aiogram.dispatcher - INFO - Start polling
+2026-05-02 23:39:59,293 - aiogram.dispatcher - INFO - Run polling for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-05-02 23:40:14,537 - aiogram.event - INFO - Update id=191451425 is handled. Duration 240 ms by bot id=8769370979
+2026-05-02 23:40:16,115 - aiogram.event - INFO - Update id=191451426 is not handled. Duration 0 ms by bot id=8769370979
+2026-05-02 23:40:16,115 - aiogram.event - ERROR - Cause exception while process update id=191451426 by bot id=8769370979
+TypeError: 'StatesGroupMeta' object does not support item assignment
+Traceback (most recent call last):
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 163, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 155, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 183, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "d:\AV\Education\Master\Mentor Seminar\weight_tg_bot\bot.py", line 114, in handle_weight_button
+    UserStates[user_id] = {
+    ~~~~~~~~~~^^^^^^^^^
+TypeError: 'StatesGroupMeta' object does not support item assignment
+2026-05-02 23:40:18,398 - aiogram.event - INFO - Update id=191451427 is not handled. Duration 1 ms by bot id=8769370979
+2026-05-02 23:40:18,399 - aiogram.event - ERROR - Cause exception while process update id=191451427 by bot id=8769370979
+TypeError: 'StatesGroupMeta' object does not support item assignment
+Traceback (most recent call last):
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 163, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 155, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 183, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "d:\AV\Education\Master\Mentor Seminar\weight_tg_bot\bot.py", line 114, in handle_weight_button
+    UserStates[user_id] = {
+    ~~~~~~~~~~^^^^^^^^^
+TypeError: 'StatesGroupMeta' object does not support item assignment
+2026-05-02 23:40:18,545 - aiogram.event - INFO - Update id=191451428 is not handled. Duration 1 ms by bot id=8769370979
+2026-05-02 23:40:18,545 - aiogram.event - ERROR - Cause exception while process update id=191451428 by bot id=8769370979
+TypeError: 'StatesGroupMeta' object does not support item assignment
+Traceback (most recent call last):
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 163, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 155, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 183, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "d:\AV\Education\Master\Mentor Seminar\weight_tg_bot\bot.py", line 114, in handle_weight_button
+    UserStates[user_id] = {
+    ~~~~~~~~~~^^^^^^^^^
+TypeError: 'StatesGroupMeta' object does not support item assignment
+2026-05-02 23:44:00,489 - aiogram.dispatcher - INFO - Polling stopped
+2026-05-02 23:44:00,490 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-05-02 23:44:00,490 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8769370979)
+2026-05-02 23:44:00,742 - aiogram.dispatcher - INFO - Polling stopped for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-05-02 23:44:04,584 - aiogram.dispatcher - INFO - Start polling
+2026-05-02 23:44:04,807 - aiogram.dispatcher - INFO - Run polling for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-05-02 23:44:13,593 - aiogram.event - INFO - Update id=191451429 is handled. Duration 198 ms by bot id=8769370979
+2026-05-02 23:44:14,645 - aiogram.event - INFO - Update id=191451430 is not handled. Duration 1 ms by bot id=8769370979
+2026-05-02 23:44:14,645 - aiogram.event - ERROR - Cause exception while process update id=191451430 by bot id=8769370979
+TypeError: 'StatesGroupMeta' object does not support item assignment
+Traceback (most recent call last):
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 163, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 155, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 183, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "d:\AV\Education\Master\Mentor Seminar\weight_tg_bot\bot.py", line 114, in handle_weight_button
+    UserStates[user_id] = {
+    ~~~~~~~~~~^^^^^^^^^
+TypeError: 'StatesGroupMeta' object does not support item assignment
+2026-05-02 23:45:58,028 - aiogram.dispatcher - INFO - Polling stopped
+2026-05-02 23:45:58,029 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-05-02 23:45:58,029 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8769370979)
+2026-05-02 23:45:58,128 - aiogram.dispatcher - INFO - Polling stopped for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-05-02 23:46:01,728 - aiogram.dispatcher - INFO - Start polling
+2026-05-02 23:46:01,897 - aiogram.dispatcher - INFO - Run polling for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-05-02 23:46:08,353 - aiogram.event - INFO - Update id=191451431 is handled. Duration 197 ms by bot id=8769370979
+2026-05-02 23:46:09,310 - aiogram.event - INFO - Update id=191451432 is not handled. Duration 1 ms by bot id=8769370979
+2026-05-02 23:46:09,310 - aiogram.event - ERROR - Cause exception while process update id=191451432 by bot id=8769370979
+AttributeError: type object 'UserStates' has no attribute 'waiting_for_weight'
+Traceback (most recent call last):
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 163, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 155, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 183, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "d:\AV\Education\Master\Mentor Seminar\weight_tg_bot\bot.py", line 112, in handle_weight_button
+    await state.set_state(UserStates.waiting_for_weight)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'UserStates' has no attribute 'waiting_for_weight'. Did you mean: 'waiting_for_bio'?
+2026-05-02 23:46:30,160 - aiogram.dispatcher - INFO - Polling stopped
+2026-05-02 23:46:30,162 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-05-02 23:46:30,162 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8769370979)
+2026-05-02 23:46:30,428 - aiogram.dispatcher - INFO - Polling stopped for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-05-02 23:46:34,033 - aiogram.dispatcher - INFO - Start polling
+2026-05-02 23:46:34,200 - aiogram.dispatcher - INFO - Run polling for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-05-02 23:46:38,856 - aiogram.event - INFO - Update id=191451433 is handled. Duration 233 ms by bot id=8769370979
+2026-05-02 23:46:40,046 - aiogram.event - INFO - Update id=191451434 is handled. Duration 228 ms by bot id=8769370979
+2026-05-02 23:46:43,087 - aiogram.event - INFO - Update id=191451435 is not handled. Duration 0 ms by bot id=8769370979
+2026-05-02 23:46:43,088 - aiogram.event - ERROR - Cause exception while process update id=191451435 by bot id=8769370979
+AttributeError: type object 'UserStates' has no attribute 'get'
+Traceback (most recent call last):
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 163, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 155, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 183, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "d:\AV\Education\Master\Mentor Seminar\weight_tg_bot\bot.py", line 140, in message_hadler
+    if UserStates.get(user_id) == "waiting_for_weight":
+       ^^^^^^^^^^^^^^
+AttributeError: type object 'UserStates' has no attribute 'get'
+2026-05-02 23:50:09,005 - aiogram.dispatcher - INFO - Polling stopped
+2026-05-02 23:50:09,006 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-05-02 23:50:09,006 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8769370979)
+2026-05-02 23:50:09,264 - aiogram.dispatcher - INFO - Polling stopped for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-05-02 23:50:13,030 - aiogram.dispatcher - INFO - Start polling
+2026-05-02 23:50:13,265 - aiogram.dispatcher - INFO - Run polling for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-05-02 23:50:19,673 - aiogram.event - INFO - Update id=191451436 is handled. Duration 262 ms by bot id=8769370979
+2026-05-02 23:50:20,876 - aiogram.event - INFO - Update id=191451437 is handled. Duration 219 ms by bot id=8769370979
+2026-05-02 23:50:23,492 - httpx - INFO - HTTP Request: POST http://127.0.0.1:8000/save-weight "HTTP/1.1 200 OK"
+2026-05-02 23:50:23,582 - aiogram.event - INFO - Update id=191451438 is handled. Duration 851 ms by bot id=8769370979
+2026-05-02 23:50:27,391 - aiogram.event - INFO - Update id=191451439 is handled. Duration 400 ms by bot id=8769370979
+2026-05-02 23:50:30,160 - httpx - INFO - HTTP Request: POST http://127.0.0.1:8000/save-weight "HTTP/1.1 200 OK"
+2026-05-02 23:50:30,348 - aiogram.event - INFO - Update id=191451440 is handled. Duration 699 ms by bot id=8769370979
+2026-05-02 23:54:04,749 - aiogram.dispatcher - INFO - Polling stopped
+2026-05-02 23:54:04,750 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-05-02 23:54:04,750 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8769370979)
+2026-05-02 23:54:05,012 - aiogram.dispatcher - INFO - Polling stopped for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-05-02 23:54:08,599 - aiogram.dispatcher - INFO - Start polling
+2026-05-02 23:54:09,357 - aiogram.dispatcher - INFO - Run polling for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-05-02 23:54:19,402 - aiogram.event - INFO - Update id=191451441 is handled. Duration 1353 ms by bot id=8769370979
+2026-05-02 23:54:20,744 - aiogram.event - INFO - Update id=191451442 is handled. Duration 190 ms by bot id=8769370979
+2026-05-02 23:54:23,142 - httpx - INFO - HTTP Request: POST http://127.0.0.1:8000/save-weight "HTTP/1.1 200 OK"
+2026-05-02 23:54:23,238 - aiogram.event - INFO - Update id=191451443 is handled. Duration 845 ms by bot id=8769370979
+2026-05-02 23:54:27,191 - aiogram.event - INFO - Update id=191451444 is handled. Duration 723 ms by bot id=8769370979
+2026-05-02 23:54:29,494 - aiogram.event - INFO - Update id=191451445 is handled. Duration 338 ms by bot id=8769370979
+2026-05-02 23:54:33,545 - httpx - INFO - HTTP Request: POST http://127.0.0.1:8000/save-weight "HTTP/1.1 200 OK"
+2026-05-02 23:54:33,652 - aiogram.event - INFO - Update id=191451446 is handled. Duration 614 ms by bot id=8769370979
+2026-05-03 19:50:37,311 - aiogram.dispatcher - INFO - Start polling
+2026-05-03 19:50:37,534 - aiogram.dispatcher - INFO - Run polling for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-05-03 19:52:19,375 - aiogram.dispatcher - INFO - Polling stopped
+2026-05-03 19:52:19,377 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-05-03 19:52:19,377 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8769370979)
+2026-05-03 19:52:19,664 - aiogram.dispatcher - INFO - Polling stopped for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-05-03 19:52:23,837 - aiogram.dispatcher - INFO - Start polling
+2026-05-03 19:52:24,021 - aiogram.dispatcher - INFO - Run polling for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-05-03 19:52:41,622 - aiogram.event - INFO - Update id=191451447 is handled. Duration 314 ms by bot id=8769370979
+2026-05-03 19:52:42,704 - aiogram.event - INFO - Update id=191451448 is handled. Duration 171 ms by bot id=8769370979
+2026-05-03 19:52:44,909 - aiogram.event - INFO - Update id=191451449 is handled. Duration 116 ms by bot id=8769370979
+2026-05-03 19:52:47,989 - httpx - INFO - HTTP Request: POST http://127.0.0.1:8000/save-weight "HTTP/1.1 200 OK"
+2026-05-03 19:52:48,115 - aiogram.event - INFO - Update id=191451450 is handled. Duration 882 ms by bot id=8769370979
+2026-05-03 20:03:35,479 - aiogram.event - INFO - Update id=191451451 is handled. Duration 196 ms by bot id=8769370979
+2026-05-03 20:03:39,048 - httpx - INFO - HTTP Request: POST http://127.0.0.1:8000/save-weight "HTTP/1.1 200 OK"
+2026-05-03 20:03:39,149 - aiogram.event - INFO - Update id=191451452 is handled. Duration 690 ms by bot id=8769370979
+2026-05-03 20:06:01,695 - aiogram.event - INFO - Update id=191451453 is handled. Duration 367 ms by bot id=8769370979
+2026-05-03 20:06:04,926 - httpx - INFO - HTTP Request: POST http://127.0.0.1:8000/save-weight "HTTP/1.1 500 Internal Server Error"
+2026-05-03 20:06:05,098 - aiogram.event - INFO - Update id=191451454 is handled. Duration 704 ms by bot id=8769370979
+2026-05-03 20:07:39,268 - aiogram.event - INFO - Update id=191451455 is handled. Duration 107 ms by bot id=8769370979
+2026-05-03 20:07:40,622 - aiogram.event - INFO - Update id=191451456 is handled. Duration 179 ms by bot id=8769370979
+2026-05-03 20:07:43,756 - httpx - INFO - HTTP Request: POST http://127.0.0.1:8000/save-weight "HTTP/1.1 422 Unprocessable Content"
+2026-05-03 20:07:43,871 - aiogram.event - INFO - Update id=191451457 is handled. Duration 647 ms by bot id=8769370979
+2026-05-03 20:08:40,560 - aiogram.dispatcher - INFO - Polling stopped
+2026-05-03 20:08:40,561 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-05-03 20:08:40,561 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8769370979)
+2026-05-03 20:08:40,815 - aiogram.dispatcher - INFO - Polling stopped for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-05-03 20:08:44,834 - aiogram.dispatcher - INFO - Start polling
+2026-05-03 20:08:45,074 - aiogram.dispatcher - INFO - Run polling for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-05-03 20:08:50,649 - aiogram.event - INFO - Update id=191451458 is handled. Duration 265 ms by bot id=8769370979
+2026-05-03 20:08:52,311 - aiogram.event - INFO - Update id=191451459 is handled. Duration 226 ms by bot id=8769370979
+2026-05-03 20:08:56,069 - __main__ - ERROR - Error processing weight: Object of type type is not JSON serializable
+2026-05-03 20:08:56,172 - aiogram.event - INFO - Update id=191451460 is handled. Duration 924 ms by bot id=8769370979
+2026-05-03 20:10:18,266 - aiogram.dispatcher - INFO - Polling stopped
+2026-05-03 20:10:18,267 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-05-03 20:10:18,267 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8769370979)
+2026-05-03 20:10:18,523 - aiogram.dispatcher - INFO - Polling stopped for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-05-03 20:10:22,129 - aiogram.dispatcher - INFO - Start polling
+2026-05-03 20:10:22,343 - aiogram.dispatcher - INFO - Run polling for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-05-03 20:10:27,133 - aiogram.event - INFO - Update id=191451461 is handled. Duration 325 ms by bot id=8769370979
+2026-05-03 20:10:28,181 - aiogram.event - INFO - Update id=191451462 is handled. Duration 195 ms by bot id=8769370979
+2026-05-03 20:10:31,068 - __main__ - ERROR - Error processing weight: 'FSMContext' object has no attribute 'get'
+2026-05-03 20:10:31,213 - aiogram.event - INFO - Update id=191451463 is handled. Duration 764 ms by bot id=8769370979
+2026-05-03 20:13:06,427 - aiogram.dispatcher - INFO - Polling stopped
+2026-05-03 20:13:06,428 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-05-03 20:13:06,428 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8769370979)
+2026-05-03 20:13:06,694 - aiogram.dispatcher - INFO - Polling stopped for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-05-03 20:13:10,150 - aiogram.dispatcher - INFO - Start polling
+2026-05-03 20:13:10,471 - aiogram.dispatcher - INFO - Run polling for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-05-03 20:13:18,535 - aiogram.event - INFO - Update id=191451464 is handled. Duration 284 ms by bot id=8769370979
+2026-05-03 20:13:19,987 - aiogram.event - INFO - Update id=191451465 is handled. Duration 400 ms by bot id=8769370979
+2026-05-03 20:13:23,019 - httpx - INFO - HTTP Request: POST http://127.0.0.1:8000/save-weight "HTTP/1.1 500 Internal Server Error"
+2026-05-03 20:13:23,126 - aiogram.event - INFO - Update id=191451466 is handled. Duration 722 ms by bot id=8769370979
+2026-05-03 20:17:13,441 - aiogram.event - INFO - Update id=191451467 is handled. Duration 123 ms by bot id=8769370979
+2026-05-03 20:17:15,128 - aiogram.event - INFO - Update id=191451468 is handled. Duration 407 ms by bot id=8769370979
+2026-05-03 20:17:17,961 - httpx - INFO - HTTP Request: POST http://127.0.0.1:8000/save-weight "HTTP/1.1 500 Internal Server Error"
+2026-05-03 20:17:18,053 - aiogram.event - INFO - Update id=191451469 is handled. Duration 566 ms by bot id=8769370979
+2026-05-03 20:21:54,663 - aiogram.event - INFO - Update id=191451470 is handled. Duration 104 ms by bot id=8769370979
+2026-05-03 20:21:56,882 - aiogram.event - INFO - Update id=191451471 is handled. Duration 347 ms by bot id=8769370979
+2026-05-03 20:21:59,908 - httpx - INFO - HTTP Request: POST http://127.0.0.1:8000/save-weight "HTTP/1.1 200 OK"
+2026-05-03 20:22:00,099 - aiogram.event - INFO - Update id=191451472 is handled. Duration 657 ms by bot id=8769370979
+2026-05-03 20:26:51,870 - aiogram.event - INFO - Update id=191451473 is handled. Duration 148 ms by bot id=8769370979
+2026-05-03 20:26:53,183 - aiogram.event - INFO - Update id=191451474 is handled. Duration 195 ms by bot id=8769370979
+2026-05-03 20:27:06,236 - __main__ - ERROR - Error processing weight: 
+2026-05-03 20:27:06,429 - aiogram.event - INFO - Update id=191451475 is handled. Duration 10681 ms by bot id=8769370979
+2026-05-03 20:27:58,112 - aiogram.event - INFO - Update id=191451476 is handled. Duration 97 ms by bot id=8769370979
+2026-05-03 20:28:00,378 - aiogram.event - INFO - Update id=191451477 is handled. Duration 197 ms by bot id=8769370979
+2026-05-03 20:28:03,528 - httpx - INFO - HTTP Request: POST http://127.0.0.1:8000/save-weight "HTTP/1.1 200 OK"
+2026-05-03 20:28:03,766 - aiogram.event - INFO - Update id=191451478 is handled. Duration 819 ms by bot id=8769370979

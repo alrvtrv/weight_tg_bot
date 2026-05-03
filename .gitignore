@@ -1,3 +1,4 @@
 weight_bot_env/
 .env/
-bot.log
+bot.log/
+weight_bot.db
