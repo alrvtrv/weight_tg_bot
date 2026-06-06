@@ -3,7 +3,7 @@ from pydantic import BaseModel
 import logging
 from datetime import date
 from contextlib import asynccontextmanager
-from sqlalchemy import Column, Integer, Float, String, Date, select
+from sqlalchemy import Column, Integer, Float, String, Date, select, and_
 from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession
 from sqlalchemy.orm import sessionmaker, declarative_base
 
@@ -57,7 +57,37 @@ app = FastAPI(lifespan=lifespan)
 # Функция для сохранения веса в БД
 @app.post("/save-weight")
 async def save_weight(data: WeightData):
+    # async with AsyncSessionLocal() as session:
+        # new_record = WeightRecord(
+        #     user_id=data.user_id,
+        #     username=data.username,
+        #     weight=data.weight,
+        #     date=data.date
+        # )
+        # session.add(new_record)
+        # message = "Weight saved successfully"
+
+        # # Сохраняем изменения в БД
+        # await session.commit()
+
     async with AsyncSessionLocal() as session:
+        # Проверяем наличие записи за указанную дату в БД
+        query = select(WeightRecord).where(
+            and_(
+                WeightRecord.user_id == data.user_id,
+                WeightRecord.date == data.date
+            )
+        )
+        result = await session.execute(query)
+        existing_records = result.scalars().all()
+
+        if len(existing_records) >= 1:  # Если запись есть в БД
+
+            # То удаляем все имеющиеся записи
+            for record in existing_records:
+                await session.delete(record)
+
+        # Вставляем новую запись
         new_record = WeightRecord(
             user_id=data.user_id,
             username=data.username,
@@ -69,6 +99,8 @@ async def save_weight(data: WeightData):
 
         # Сохраняем изменения в БД
         await session.commit()
+
+    return {"status": "success", "message": message}
 
 ########################################################################################
 # Вывод истории по юзеру

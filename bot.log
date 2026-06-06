@@ -1530,3 +1530,11 @@ aiogram.exceptions.TelegramNetworkError: HTTP Client says - ClientConnectorError
 2026-05-03 20:48:08,074 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
 2026-05-03 20:48:08,074 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8769370979)
 2026-05-03 20:48:08,333 - aiogram.dispatcher - INFO - Polling stopped for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-05-03 20:48:12,232 - aiogram.dispatcher - INFO - Start polling
+2026-05-03 20:48:12,512 - aiogram.dispatcher - INFO - Run polling for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-05-03 20:48:25,350 - aiogram.event - INFO - Update id=191451480 is handled. Duration 399 ms by bot id=8769370979
+2026-05-03 20:48:27,910 - aiogram.event - INFO - Update id=191451481 is handled. Duration 268 ms by bot id=8769370979
+2026-05-03 20:48:30,007 - httpx - INFO - HTTP Request: POST http://127.0.0.1:8000/save-weight "HTTP/1.1 200 OK"
+2026-05-03 20:48:30,146 - aiogram.event - INFO - Update id=191451482 is handled. Duration 828 ms by bot id=8769370979
+2026-05-03 20:48:32,095 - httpx - INFO - HTTP Request: GET http://127.0.0.1:8000/weight/1597189230?limit=10 "HTTP/1.1 200 OK"
+2026-05-03 20:48:32,288 - aiogram.event - INFO - Update id=191451483 is handled. Duration 776 ms by bot id=8769370979
