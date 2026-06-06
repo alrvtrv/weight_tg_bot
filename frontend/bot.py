@@ -6,13 +6,18 @@ from pathlib import Path
 from dotenv import load_dotenv
 import os
 import httpx
+from io import BytesIO
+
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
 
 from aiogram import Bot, Dispatcher, F
-from aiogram.types import Message, CallbackQuery, InlineKeyboardMarkup, InlineKeyboardButton
+from aiogram.types import Message, CallbackQuery, InlineKeyboardMarkup, InlineKeyboardButton, BufferedInputFile
 from aiogram.filters import Command
 from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import State, StatesGroup
-from aiogram_calendar import SimpleCalendar, SimpleCalendarCallback 
+from aiogram_calendar import SimpleCalendar, SimpleCalendarCallback
 
 
 BASE_URL = "http://127.0.0.1:8000"
@@ -80,7 +85,10 @@ def get_main_keyboard() -> InlineKeyboardMarkup:
         [
             InlineKeyboardButton(text="Today's entry", callback_data="weight"),
             InlineKeyboardButton(text="Other date entry", callback_data="old_date"),
-            InlineKeyboardButton(text="History", callback_data="history"),
+        ],
+        [
+            InlineKeyboardButton(text="History📔", callback_data="history"),
+            InlineKeyboardButton(text="Chart 📉", callback_data="chart"),
         ]
     ]
     return InlineKeyboardMarkup(inline_keyboard=keyboard)
@@ -166,7 +174,7 @@ async def process_weight(message: Message, state: FSMContext):
                 json={
                     "user_id": message.from_user.id,
                     "weight": weight,
-                    "date": target_date, # Uses chosen calendar date or today's date
+                    "date": target_date,
                     "username": message.from_user.username
                 },
                 timeout=10.0
@@ -222,6 +230,53 @@ async def handle_history_button(callback: CallbackQuery):
             await callback.answer("Server connection error.")
     
     await callback.answer()
+
+@dp.callback_query(F.data == "chart")
+async def handle_chart_button(callback: CallbackQuery):
+    """Хендлер построения графика"""
+    user_id = callback.from_user.id
+    await callback.answer("Generating your chart...")
+    
+    async with httpx.AsyncClient() as client:
+        try:
+            response = await client.get(f"{HISTORY_URL}/{user_id}", params={"limit": 50})
+            if response.status_code != 200:
+                await callback.message.answer("Could not fetch data from the server.")
+                return
+                
+            data = response.json()
+            records = data.get("weights", [])
+            
+            if len(records) < 2:
+                await callback.message.answer("You need at least 2 tracking points to render a chart! 📈")
+                return
+
+            records.reverse()
+            dates = [datetime.strptime(r['date'], "%Y-%m-%d") for r in records]
+            weights = [r['weight'] for r in records]
+            
+            plt.figure(figsize=(8, 4))
+            plt.plot(dates, weights, marker='o', color='#3498db', linestyle='-', linewidth=2)
+            plt.title("Weight Progress Timeline", fontsize=14, fontweight='bold', pad=15)
+            plt.grid(True, linestyle='--', alpha=0.6)
+            plt.gcf().autofmt_xdate()
+            
+            image_buffer = BytesIO()
+            plt.savefig(image_buffer, format='png', bbox_inches='tight', dpi=150)
+            plt.close()
+            image_buffer.seek(0)
+            
+            photo_file = BufferedInputFile(image_buffer.getvalue(), filename="progress_chart.png")
+            
+            await callback.message.answer_photo(
+                photo=photo_file,
+                caption="Here is your progress chart! 📈",
+                reply_markup=get_main_keyboard()
+            )
+            
+        except Exception as e:
+            logger.error(f"Chart error: {e}")
+            await callback.message.answer("An error occurred while generating the chart.")
 
 async def main():
     """Главная функция"""

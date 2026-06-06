@@ -1618,3 +1618,411 @@ aiogram.exceptions.TelegramNetworkError: HTTP Client says - ClientConnectorError
 2026-06-06 13:29:24,763 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
 2026-06-06 13:29:24,763 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8769370979)
 2026-06-06 13:29:25,022 - aiogram.dispatcher - INFO - Polling stopped for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-06-06 13:29:27,410 - aiogram.dispatcher - INFO - Start polling
+2026-06-06 13:29:27,586 - aiogram.dispatcher - INFO - Run polling for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-06-06 13:29:31,316 - aiogram.event - INFO - Update id=191451528 is handled. Duration 223 ms by bot id=8769370979
+2026-06-06 13:29:33,254 - aiogram.event - INFO - Update id=191451529 is handled. Duration 163 ms by bot id=8769370979
+2026-06-06 13:29:38,887 - httpx - INFO - HTTP Request: POST http://127.0.0.1:8000/save-weight "HTTP/1.1 200 OK"
+2026-06-06 13:29:38,973 - aiogram.event - INFO - Update id=191451530 is handled. Duration 791 ms by bot id=8769370979
+2026-06-06 13:29:41,207 - httpx - INFO - HTTP Request: GET http://127.0.0.1:8000/weight/1597189230?limit=10 "HTTP/1.1 200 OK"
+2026-06-06 13:29:41,407 - aiogram.event - INFO - Update id=191451531 is handled. Duration 708 ms by bot id=8769370979
+2026-06-06 13:29:43,401 - aiogram.event - INFO - Update id=191451532 is handled. Duration 91 ms by bot id=8769370979
+2026-06-06 13:29:46,769 - aiogram.event - INFO - Update id=191451533 is handled. Duration 165 ms by bot id=8769370979
+2026-06-06 13:29:51,009 - httpx - INFO - HTTP Request: POST http://127.0.0.1:8000/save-weight "HTTP/1.1 200 OK"
+2026-06-06 13:29:51,094 - aiogram.event - INFO - Update id=191451534 is handled. Duration 550 ms by bot id=8769370979
+2026-06-06 13:29:53,105 - httpx - INFO - HTTP Request: GET http://127.0.0.1:8000/weight/1597189230?limit=10 "HTTP/1.1 200 OK"
+2026-06-06 13:29:53,266 - aiogram.event - INFO - Update id=191451535 is handled. Duration 655 ms by bot id=8769370979
+2026-06-06 13:40:21,365 - aiogram.dispatcher - INFO - Polling stopped
+2026-06-06 13:40:21,366 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-06-06 13:40:21,366 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8769370979)
+2026-06-06 13:40:21,621 - aiogram.dispatcher - INFO - Polling stopped for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-06-06 13:41:35,255 - aiogram.dispatcher - INFO - Start polling
+2026-06-06 13:41:35,447 - aiogram.dispatcher - INFO - Run polling for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-06-06 13:41:35,687 - aiogram.event - INFO - Update id=191451536 is handled. Duration 175 ms by bot id=8769370979
+2026-06-06 13:42:10,670 - httpx - INFO - HTTP Request: GET http://127.0.0.1:8000/weight/1597189230?limit=50 "HTTP/1.1 200 OK"
+2026-06-06 13:42:11,800 - aiogram.event - INFO - Update id=191451537 is handled. Duration 2216 ms by bot id=8769370979
+2026-06-06 13:42:25,934 - aiogram.event - INFO - Update id=191451538 is not handled. Duration 68 ms by bot id=8769370979
+2026-06-06 13:42:25,935 - aiogram.event - ERROR - Cause exception while process update id=191451538 by bot id=8769370979
+TelegramBadRequest: Telegram server says - Bad Request: there is no text in the message to edit
+Traceback (most recent call last):
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 163, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 155, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 183, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "d:\AV\Education\Master\Mentor Seminar\weight_tg_bot\frontend\bot.py", line 100, in handle_old_date_button
+    await callback.message.edit_text(
+    ...<2 lines>...
+    )
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\methods\base.py", line 82, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\client\bot.py", line 493, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\client\session\base.py", line 259, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    response = self.check_response(
+        bot=bot,
+    ...<2 lines>...
+        content=raw_result,
+    )
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\client\session\base.py", line 121, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: there is no text in the message to edit
+2026-06-06 13:42:30,194 - aiogram.event - INFO - Update id=191451539 is not handled. Duration 60 ms by bot id=8769370979
+2026-06-06 13:42:30,194 - aiogram.event - ERROR - Cause exception while process update id=191451539 by bot id=8769370979
+TelegramBadRequest: Telegram server says - Bad Request: there is no text in the message to edit
+Traceback (most recent call last):
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 163, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 155, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 183, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "d:\AV\Education\Master\Mentor Seminar\weight_tg_bot\frontend\bot.py", line 95, in handle_weight_button
+    await callback.message.edit_text("Please enter your current weight (e.g. 75.5 or 80):")
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\methods\base.py", line 82, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\client\bot.py", line 493, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\client\session\base.py", line 259, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    response = self.check_response(
+        bot=bot,
+    ...<2 lines>...
+        content=raw_result,
+    )
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\client\session\base.py", line 121, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: there is no text in the message to edit
+2026-06-06 13:42:31,834 - httpx - INFO - HTTP Request: GET http://127.0.0.1:8000/weight/1597189230?limit=10 "HTTP/1.1 200 OK"
+2026-06-06 13:42:31,898 - __main__ - ERROR - History error: Telegram server says - Bad Request: there is no text in the message to edit
+2026-06-06 13:42:32,035 - aiogram.event - INFO - Update id=191451540 is handled. Duration 693 ms by bot id=8769370979
+2026-06-06 13:42:38,295 - aiogram.event - INFO - Update id=191451541 is not handled. Duration 54 ms by bot id=8769370979
+2026-06-06 13:42:38,296 - aiogram.event - ERROR - Cause exception while process update id=191451541 by bot id=8769370979
+TelegramBadRequest: Telegram server says - Bad Request: there is no text in the message to edit
+Traceback (most recent call last):
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 163, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 155, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 183, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "d:\AV\Education\Master\Mentor Seminar\weight_tg_bot\frontend\bot.py", line 95, in handle_weight_button
+    await callback.message.edit_text("Please enter your current weight (e.g. 75.5 or 80):")
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\methods\base.py", line 82, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\client\bot.py", line 493, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\client\session\base.py", line 259, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    response = self.check_response(
+        bot=bot,
+    ...<2 lines>...
+        content=raw_result,
+    )
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\client\session\base.py", line 121, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: there is no text in the message to edit
+2026-06-06 13:45:34,463 - aiogram.dispatcher - INFO - Polling stopped
+2026-06-06 13:45:34,463 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-06-06 13:45:34,464 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8769370979)
+2026-06-06 13:45:34,716 - aiogram.dispatcher - INFO - Polling stopped for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-06-06 13:45:37,468 - aiogram.dispatcher - INFO - Start polling
+2026-06-06 13:45:37,685 - aiogram.dispatcher - INFO - Run polling for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-06-06 13:45:45,251 - aiogram.event - INFO - Update id=191451542 is handled. Duration 178 ms by bot id=8769370979
+2026-06-06 13:45:48,137 - aiogram.event - INFO - Update id=191451543 is handled. Duration 152 ms by bot id=8769370979
+2026-06-06 13:45:51,037 - httpx - INFO - HTTP Request: POST http://127.0.0.1:8000/save-weight "HTTP/1.1 200 OK"
+2026-06-06 13:45:51,148 - aiogram.event - INFO - Update id=191451544 is handled. Duration 1059 ms by bot id=8769370979
+2026-06-06 13:45:53,665 - httpx - INFO - HTTP Request: GET http://127.0.0.1:8000/weight/1597189230?limit=50 "HTTP/1.1 200 OK"
+2026-06-06 13:45:54,461 - aiogram.event - INFO - Update id=191451545 is handled. Duration 1306 ms by bot id=8769370979
+2026-06-06 13:46:06,101 - httpx - INFO - HTTP Request: GET http://127.0.0.1:8000/weight/1597189230?limit=10 "HTTP/1.1 200 OK"
+2026-06-06 13:46:06,344 - aiogram.event - INFO - Update id=191451546 is handled. Duration 767 ms by bot id=8769370979
+2026-06-06 13:46:08,565 - aiogram.event - INFO - Update id=191451547 is handled. Duration 88 ms by bot id=8769370979
+2026-06-06 13:46:10,028 - aiogram.event - INFO - Update id=191451548 is handled. Duration 171 ms by bot id=8769370979
+2026-06-06 13:46:14,169 - httpx - INFO - HTTP Request: POST http://127.0.0.1:8000/save-weight "HTTP/1.1 200 OK"
+2026-06-06 13:46:14,253 - aiogram.event - INFO - Update id=191451549 is handled. Duration 614 ms by bot id=8769370979
+2026-06-06 13:46:16,959 - httpx - INFO - HTTP Request: GET http://127.0.0.1:8000/weight/1597189230?limit=10 "HTTP/1.1 200 OK"
+2026-06-06 13:46:17,118 - aiogram.event - INFO - Update id=191451550 is handled. Duration 392 ms by bot id=8769370979
+2026-06-06 13:46:19,891 - httpx - INFO - HTTP Request: GET http://127.0.0.1:8000/weight/1597189230?limit=50 "HTTP/1.1 200 OK"
+2026-06-06 13:46:20,626 - aiogram.event - INFO - Update id=191451551 is handled. Duration 1304 ms by bot id=8769370979
+2026-06-06 13:47:31,630 - aiogram.dispatcher - INFO - Polling stopped
+2026-06-06 13:47:31,631 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-06-06 13:47:31,631 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8769370979)
+2026-06-06 13:47:31,894 - aiogram.dispatcher - INFO - Polling stopped for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-06-06 13:47:34,523 - aiogram.dispatcher - INFO - Start polling
+2026-06-06 13:47:34,657 - aiogram.dispatcher - INFO - Run polling for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-06-06 13:47:42,525 - aiogram.event - INFO - Update id=191451552 is handled. Duration 186 ms by bot id=8769370979
+2026-06-06 13:47:47,759 - httpx - INFO - HTTP Request: GET http://127.0.0.1:8000/weight/1597189230?limit=50 "HTTP/1.1 200 OK"
+2026-06-06 13:47:48,388 - aiogram.event - INFO - Update id=191451553 is handled. Duration 1453 ms by bot id=8769370979
+2026-06-06 13:47:52,926 - aiogram.event - INFO - Update id=191451554 is handled. Duration 166 ms by bot id=8769370979
+2026-06-06 13:47:55,804 - aiogram.event - INFO - Update id=191451555 is handled. Duration 150 ms by bot id=8769370979
+2026-06-06 13:47:59,985 - httpx - INFO - HTTP Request: POST http://127.0.0.1:8000/save-weight "HTTP/1.1 200 OK"
+2026-06-06 13:48:00,126 - aiogram.event - INFO - Update id=191451556 is handled. Duration 698 ms by bot id=8769370979
+2026-06-06 13:48:02,032 - httpx - INFO - HTTP Request: GET http://127.0.0.1:8000/weight/1597189230?limit=10 "HTTP/1.1 200 OK"
+2026-06-06 13:48:02,179 - aiogram.event - INFO - Update id=191451557 is handled. Duration 631 ms by bot id=8769370979
+2026-06-06 13:53:21,147 - aiogram.dispatcher - INFO - Polling stopped
+2026-06-06 13:53:21,148 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-06-06 13:53:21,148 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8769370979)
+2026-06-06 13:53:21,406 - aiogram.dispatcher - INFO - Polling stopped for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-06-06 13:53:23,909 - aiogram.dispatcher - INFO - Start polling
+2026-06-06 13:53:24,094 - aiogram.dispatcher - INFO - Run polling for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-06-06 13:53:33,889 - aiogram.event - INFO - Update id=191451558 is handled. Duration 177 ms by bot id=8769370979
+2026-06-06 13:53:42,315 - aiogram.event - INFO - Update id=191451559 is handled. Duration 116 ms by bot id=8769370979
+2026-06-06 13:53:44,952 - aiogram.event - INFO - Update id=191451560 is handled. Duration 225 ms by bot id=8769370979
+2026-06-06 13:53:48,488 - httpx - INFO - HTTP Request: POST http://127.0.0.1:8000/save-weight "HTTP/1.1 200 OK"
+2026-06-06 13:53:48,664 - aiogram.event - INFO - Update id=191451561 is handled. Duration 1068 ms by bot id=8769370979
+2026-06-06 13:53:53,157 - httpx - INFO - HTTP Request: GET http://127.0.0.1:8000/weight/1597189230?limit=10 "HTTP/1.1 200 OK"
+2026-06-06 13:53:53,369 - aiogram.event - INFO - Update id=191451562 is handled. Duration 761 ms by bot id=8769370979
+2026-06-06 13:53:58,479 - aiogram.event - INFO - Update id=191451563 is handled. Duration 195 ms by bot id=8769370979
+2026-06-06 13:54:03,276 - httpx - INFO - HTTP Request: POST http://127.0.0.1:8000/save-weight "HTTP/1.1 200 OK"
+2026-06-06 13:54:03,366 - aiogram.event - INFO - Update id=191451564 is handled. Duration 592 ms by bot id=8769370979
+2026-06-06 13:54:04,792 - httpx - INFO - HTTP Request: GET http://127.0.0.1:8000/weight/1597189230?limit=10 "HTTP/1.1 200 OK"
+2026-06-06 13:54:04,955 - aiogram.event - INFO - Update id=191451565 is handled. Duration 666 ms by bot id=8769370979
+2026-06-06 13:54:14,592 - httpx - INFO - HTTP Request: GET http://127.0.0.1:8000/weight/1597189230?limit=50 "HTTP/1.1 200 OK"
+2026-06-06 13:54:15,317 - aiogram.event - INFO - Update id=191451566 is handled. Duration 1279 ms by bot id=8769370979
+2026-06-06 13:57:15,353 - aiogram.dispatcher - INFO - Polling stopped
+2026-06-06 13:57:15,354 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-06-06 13:57:15,354 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8769370979)
+2026-06-06 13:57:15,612 - aiogram.dispatcher - INFO - Polling stopped for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-06-06 13:57:18,267 - aiogram.dispatcher - INFO - Start polling
+2026-06-06 13:57:18,457 - aiogram.dispatcher - INFO - Run polling for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-06-06 13:57:22,451 - aiogram.event - INFO - Update id=191451567 is handled. Duration 191 ms by bot id=8769370979
+2026-06-06 13:57:24,340 - httpx - INFO - HTTP Request: GET http://127.0.0.1:8000/weight/1597189230?limit=10 "HTTP/1.1 200 OK"
+2026-06-06 13:57:24,591 - aiogram.event - INFO - Update id=191451568 is handled. Duration 1122 ms by bot id=8769370979
+2026-06-06 13:57:32,028 - aiogram.event - INFO - Update id=191451569 is handled. Duration 145 ms by bot id=8769370979
+2026-06-06 13:57:34,814 - httpx - INFO - HTTP Request: POST http://127.0.0.1:8000/save-weight "HTTP/1.1 200 OK"
+2026-06-06 13:57:34,909 - aiogram.event - INFO - Update id=191451570 is handled. Duration 614 ms by bot id=8769370979
+2026-06-06 13:57:36,546 - httpx - INFO - HTTP Request: GET http://127.0.0.1:8000/weight/1597189230?limit=10 "HTTP/1.1 200 OK"
+2026-06-06 13:57:36,703 - aiogram.event - INFO - Update id=191451571 is handled. Duration 626 ms by bot id=8769370979
+2026-06-06 13:58:56,509 - aiogram.dispatcher - INFO - Polling stopped
+2026-06-06 13:58:56,510 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-06-06 13:58:56,510 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8769370979)
+2026-06-06 13:58:56,770 - aiogram.dispatcher - INFO - Polling stopped for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-06-06 13:58:59,739 - aiogram.dispatcher - INFO - Start polling
+2026-06-06 13:58:59,873 - aiogram.dispatcher - INFO - Run polling for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-06-06 13:59:03,367 - aiogram.event - INFO - Update id=191451572 is handled. Duration 209 ms by bot id=8769370979
+2026-06-06 13:59:07,200 - aiogram.event - INFO - Update id=191451573 is handled. Duration 102 ms by bot id=8769370979
+2026-06-06 13:59:10,169 - aiogram.event - INFO - Update id=191451574 is handled. Duration 170 ms by bot id=8769370979
+2026-06-06 13:59:14,236 - httpx - INFO - HTTP Request: POST http://127.0.0.1:8000/save-weight "HTTP/1.1 200 OK"
+2026-06-06 13:59:14,348 - aiogram.event - INFO - Update id=191451575 is handled. Duration 965 ms by bot id=8769370979
+2026-06-06 13:59:16,492 - httpx - INFO - HTTP Request: GET http://127.0.0.1:8000/weight/1597189230?limit=10 "HTTP/1.1 200 OK"
+2026-06-06 13:59:16,657 - aiogram.event - INFO - Update id=191451576 is handled. Duration 727 ms by bot id=8769370979
+2026-06-06 13:59:20,554 - httpx - INFO - HTTP Request: GET http://127.0.0.1:8000/weight/1597189230?limit=50 "HTTP/1.1 200 OK"
+2026-06-06 13:59:21,147 - aiogram.event - INFO - Update id=191451577 is handled. Duration 1115 ms by bot id=8769370979
+2026-06-06 13:59:55,081 - aiogram.dispatcher - INFO - Polling stopped
+2026-06-06 13:59:55,082 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-06-06 13:59:55,082 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8769370979)
+2026-06-06 13:59:55,342 - aiogram.dispatcher - INFO - Polling stopped for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-06-06 13:59:58,392 - aiogram.dispatcher - INFO - Start polling
+2026-06-06 13:59:58,539 - aiogram.dispatcher - INFO - Run polling for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-06-06 14:00:01,856 - aiogram.event - INFO - Update id=191451578 is not handled. Duration 143 ms by bot id=8769370979
+2026-06-06 14:00:01,856 - aiogram.event - ERROR - Cause exception while process update id=191451578 by bot id=8769370979
+TelegramBadRequest: Telegram server says - Bad Request: there is no text in the message to edit
+Traceback (most recent call last):
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 163, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 155, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\router.py", line 183, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "d:\AV\Education\Master\Mentor Seminar\weight_tg_bot\frontend\bot.py", line 123, in handle_weight_button
+    await callback.message.edit_text(
+        "Please enter your current weight (e.g. 75.5 or 80):"
+    )
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\methods\base.py", line 82, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\client\bot.py", line 493, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\client\session\base.py", line 259, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    response = self.check_response(
+        bot=bot,
+    ...<2 lines>...
+        content=raw_result,
+    )
+  File "D:\AV\Education\Master\Mentor Seminar\weight_tg_bot\weight_bot_venv\Lib\site-packages\aiogram\client\session\base.py", line 121, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: there is no text in the message to edit
+2026-06-06 14:00:05,111 - aiogram.event - INFO - Update id=191451579 is handled. Duration 113 ms by bot id=8769370979
+2026-06-06 14:00:06,626 - aiogram.event - INFO - Update id=191451580 is handled. Duration 85 ms by bot id=8769370979
+2026-06-06 14:00:12,206 - httpx - INFO - HTTP Request: POST http://127.0.0.1:8000/save-weight "HTTP/1.1 200 OK"
+2026-06-06 14:00:12,302 - aiogram.event - INFO - Update id=191451581 is handled. Duration 1067 ms by bot id=8769370979
+2026-06-06 14:00:14,002 - httpx - INFO - HTTP Request: GET http://127.0.0.1:8000/weight/1597189230?limit=10 "HTTP/1.1 200 OK"
+2026-06-06 14:00:14,165 - aiogram.event - INFO - Update id=191451582 is handled. Duration 708 ms by bot id=8769370979
+2026-06-06 14:00:45,929 - aiogram.dispatcher - INFO - Polling stopped
+2026-06-06 14:00:45,930 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-06-06 14:00:45,930 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8769370979)
+2026-06-06 14:00:46,192 - aiogram.dispatcher - INFO - Polling stopped for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
