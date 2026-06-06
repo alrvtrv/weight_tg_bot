@@ -1538,3 +1538,83 @@ aiogram.exceptions.TelegramNetworkError: HTTP Client says - ClientConnectorError
 2026-05-03 20:48:30,146 - aiogram.event - INFO - Update id=191451482 is handled. Duration 828 ms by bot id=8769370979
 2026-05-03 20:48:32,095 - httpx - INFO - HTTP Request: GET http://127.0.0.1:8000/weight/1597189230?limit=10 "HTTP/1.1 200 OK"
 2026-05-03 20:48:32,288 - aiogram.event - INFO - Update id=191451483 is handled. Duration 776 ms by bot id=8769370979
+2026-06-06 12:31:25,422 - aiogram.dispatcher - INFO - Start polling
+2026-06-06 12:31:25,619 - aiogram.dispatcher - INFO - Run polling for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-06-06 12:32:32,344 - aiogram.event - INFO - Update id=191451484 is handled. Duration 255 ms by bot id=8769370979
+2026-06-06 12:32:34,690 - aiogram.event - INFO - Update id=191451485 is handled. Duration 155 ms by bot id=8769370979
+2026-06-06 12:32:38,283 - aiogram.event - INFO - Update id=191451486 is handled. Duration 74 ms by bot id=8769370979
+2026-06-06 12:32:47,080 - httpx - INFO - HTTP Request: POST http://127.0.0.1:8000/save-weight "HTTP/1.1 200 OK"
+2026-06-06 12:32:47,180 - aiogram.event - INFO - Update id=191451487 is handled. Duration 770 ms by bot id=8769370979
+2026-06-06 12:32:49,332 - httpx - INFO - HTTP Request: GET http://127.0.0.1:8000/weight/1597189230?limit=10 "HTTP/1.1 200 OK"
+2026-06-06 12:32:49,493 - aiogram.event - INFO - Update id=191451488 is handled. Duration 690 ms by bot id=8769370979
+2026-06-06 12:41:59,999 - aiogram.event - INFO - Update id=191451489 is handled. Duration 150 ms by bot id=8769370979
+2026-06-06 12:42:04,557 - httpx - INFO - HTTP Request: POST http://127.0.0.1:8000/save-weight "HTTP/1.1 200 OK"
+2026-06-06 12:42:04,643 - aiogram.event - INFO - Update id=191451490 is handled. Duration 572 ms by bot id=8769370979
+2026-06-06 12:42:06,518 - httpx - INFO - HTTP Request: GET http://127.0.0.1:8000/weight/1597189230?limit=10 "HTTP/1.1 200 OK"
+2026-06-06 12:42:06,735 - aiogram.event - INFO - Update id=191451491 is handled. Duration 833 ms by bot id=8769370979
+2026-06-06 12:42:51,067 - aiogram.event - INFO - Update id=191451492 is handled. Duration 144 ms by bot id=8769370979
+2026-06-06 12:42:54,661 - httpx - INFO - HTTP Request: POST http://127.0.0.1:8000/save-weight "HTTP/1.1 200 OK"
+2026-06-06 12:42:54,742 - aiogram.event - INFO - Update id=191451493 is handled. Duration 578 ms by bot id=8769370979
+2026-06-06 12:42:56,771 - httpx - INFO - HTTP Request: GET http://127.0.0.1:8000/weight/1597189230?limit=10 "HTTP/1.1 200 OK"
+2026-06-06 12:42:56,926 - aiogram.event - INFO - Update id=191451494 is handled. Duration 712 ms by bot id=8769370979
+2026-06-06 12:43:28,264 - aiogram.event - INFO - Update id=191451495 is handled. Duration 193 ms by bot id=8769370979
+2026-06-06 12:43:31,675 - httpx - INFO - HTTP Request: POST http://127.0.0.1:8000/save-weight "HTTP/1.1 500 Internal Server Error"
+2026-06-06 12:43:31,766 - aiogram.event - INFO - Update id=191451496 is handled. Duration 611 ms by bot id=8769370979
+2026-06-06 12:45:24,652 - aiogram.event - INFO - Update id=191451497 is handled. Duration 90 ms by bot id=8769370979
+2026-06-06 12:45:26,898 - aiogram.event - INFO - Update id=191451498 is handled. Duration 135 ms by bot id=8769370979
+2026-06-06 12:45:29,895 - httpx - INFO - HTTP Request: POST http://127.0.0.1:8000/save-weight "HTTP/1.1 500 Internal Server Error"
+2026-06-06 12:45:30,040 - aiogram.event - INFO - Update id=191451499 is handled. Duration 692 ms by bot id=8769370979
+2026-06-06 12:48:36,950 - aiogram.event - INFO - Update id=191451500 is handled. Duration 173 ms by bot id=8769370979
+2026-06-06 12:48:38,144 - aiogram.event - INFO - Update id=191451501 is handled. Duration 141 ms by bot id=8769370979
+2026-06-06 12:48:41,316 - httpx - INFO - HTTP Request: POST http://127.0.0.1:8000/save-weight "HTTP/1.1 500 Internal Server Error"
+2026-06-06 12:48:41,537 - aiogram.event - INFO - Update id=191451502 is handled. Duration 802 ms by bot id=8769370979
+2026-06-06 12:49:58,152 - aiogram.event - INFO - Update id=191451503 is handled. Duration 96 ms by bot id=8769370979
+2026-06-06 12:49:59,721 - aiogram.event - INFO - Update id=191451504 is handled. Duration 141 ms by bot id=8769370979
+2026-06-06 12:50:03,462 - httpx - INFO - HTTP Request: POST http://127.0.0.1:8000/save-weight "HTTP/1.1 500 Internal Server Error"
+2026-06-06 12:50:03,542 - aiogram.event - INFO - Update id=191451505 is handled. Duration 610 ms by bot id=8769370979
+2026-06-06 12:54:42,875 - aiogram.event - INFO - Update id=191451506 is handled. Duration 83 ms by bot id=8769370979
+2026-06-06 12:54:44,240 - aiogram.event - INFO - Update id=191451507 is handled. Duration 153 ms by bot id=8769370979
+2026-06-06 12:54:46,321 - httpx - INFO - HTTP Request: POST http://127.0.0.1:8000/save-weight "HTTP/1.1 200 OK"
+2026-06-06 12:54:46,406 - aiogram.event - INFO - Update id=191451508 is handled. Duration 527 ms by bot id=8769370979
+2026-06-06 12:54:48,418 - httpx - INFO - HTTP Request: GET http://127.0.0.1:8000/weight/1597189230?limit=10 "HTTP/1.1 200 OK"
+2026-06-06 12:54:48,579 - aiogram.event - INFO - Update id=191451509 is handled. Duration 698 ms by bot id=8769370979
+2026-06-06 13:19:29,576 - aiogram.dispatcher - INFO - Polling stopped
+2026-06-06 13:19:29,577 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-06-06 13:19:29,577 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8769370979)
+2026-06-06 13:19:29,843 - aiogram.dispatcher - INFO - Polling stopped for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-06-06 13:19:32,818 - aiogram.dispatcher - INFO - Start polling
+2026-06-06 13:19:33,026 - aiogram.dispatcher - INFO - Run polling for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-06-06 13:19:40,347 - aiogram.event - INFO - Update id=191451510 is handled. Duration 188 ms by bot id=8769370979
+2026-06-06 13:19:42,287 - aiogram.event - INFO - Update id=191451511 is handled. Duration 95 ms by bot id=8769370979
+2026-06-06 13:19:48,847 - aiogram.event - INFO - Update id=191451512 is handled. Duration 163 ms by bot id=8769370979
+2026-06-06 13:19:57,044 - aiogram.event - INFO - Update id=191451513 is not handled. Duration 0 ms by bot id=8769370979
+2026-06-06 13:22:42,102 - aiogram.event - INFO - Update id=191451514 is handled. Duration 83 ms by bot id=8769370979
+2026-06-06 13:24:30,169 - aiogram.dispatcher - INFO - Polling stopped
+2026-06-06 13:24:30,170 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-06-06 13:24:30,170 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8769370979)
+2026-06-06 13:24:30,428 - aiogram.dispatcher - INFO - Polling stopped for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-06-06 13:24:32,712 - aiogram.dispatcher - INFO - Start polling
+2026-06-06 13:24:32,928 - aiogram.dispatcher - INFO - Run polling for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'
+2026-06-06 13:24:42,799 - aiogram.event - INFO - Update id=191451515 is handled. Duration 204 ms by bot id=8769370979
+2026-06-06 13:24:44,328 - aiogram.event - INFO - Update id=191451516 is handled. Duration 90 ms by bot id=8769370979
+2026-06-06 13:24:46,222 - aiogram.event - INFO - Update id=191451517 is handled. Duration 156 ms by bot id=8769370979
+2026-06-06 13:24:49,223 - httpx - INFO - HTTP Request: POST http://127.0.0.1:8000/save-weight "HTTP/1.1 200 OK"
+2026-06-06 13:24:49,315 - aiogram.event - INFO - Update id=191451518 is handled. Duration 775 ms by bot id=8769370979
+2026-06-06 13:24:53,480 - httpx - INFO - HTTP Request: GET http://127.0.0.1:8000/weight/1597189230?limit=10 "HTTP/1.1 200 OK"
+2026-06-06 13:24:53,724 - aiogram.event - INFO - Update id=191451519 is handled. Duration 743 ms by bot id=8769370979
+2026-06-06 13:24:57,994 - aiogram.event - INFO - Update id=191451520 is handled. Duration 83 ms by bot id=8769370979
+2026-06-06 13:24:59,903 - aiogram.event - INFO - Update id=191451521 is handled. Duration 128 ms by bot id=8769370979
+2026-06-06 13:25:02,251 - aiogram.event - INFO - Update id=191451522 is handled. Duration 154 ms by bot id=8769370979
+2026-06-06 13:25:05,195 - httpx - INFO - HTTP Request: POST http://127.0.0.1:8000/save-weight "HTTP/1.1 200 OK"
+2026-06-06 13:25:05,290 - aiogram.event - INFO - Update id=191451523 is handled. Duration 612 ms by bot id=8769370979
+2026-06-06 13:25:07,396 - httpx - INFO - HTTP Request: GET http://127.0.0.1:8000/weight/1597189230?limit=10 "HTTP/1.1 200 OK"
+2026-06-06 13:25:07,695 - aiogram.event - INFO - Update id=191451524 is handled. Duration 855 ms by bot id=8769370979
+2026-06-06 13:27:22,728 - aiogram.event - INFO - Update id=191451525 is handled. Duration 144 ms by bot id=8769370979
+2026-06-06 13:27:25,487 - httpx - INFO - HTTP Request: POST http://127.0.0.1:8000/save-weight "HTTP/1.1 200 OK"
+2026-06-06 13:27:25,570 - aiogram.event - INFO - Update id=191451526 is handled. Duration 611 ms by bot id=8769370979
+2026-06-06 13:27:27,417 - httpx - INFO - HTTP Request: GET http://127.0.0.1:8000/weight/1597189230?limit=10 "HTTP/1.1 200 OK"
+2026-06-06 13:27:27,566 - aiogram.event - INFO - Update id=191451527 is handled. Duration 634 ms by bot id=8769370979
+2026-06-06 13:29:24,762 - aiogram.dispatcher - INFO - Polling stopped
+2026-06-06 13:29:24,763 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-06-06 13:29:24,763 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8769370979)
+2026-06-06 13:29:25,022 - aiogram.dispatcher - INFO - Polling stopped for bot @weight_tracker_new_bot id=8769370979 - 'Weight Tracker'

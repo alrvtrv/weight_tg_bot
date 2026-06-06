@@ -12,6 +12,7 @@ from aiogram.types import Message, CallbackQuery, InlineKeyboardMarkup, InlineKe
 from aiogram.filters import Command
 from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import State, StatesGroup
+from aiogram_calendar import SimpleCalendar, SimpleCalendarCallback 
 
 
 BASE_URL = "http://127.0.0.1:8000"
@@ -45,6 +46,7 @@ dp = Dispatcher()
 class UserStates(StatesGroup):
     waiting_for_bio = State()
     waiting_for_weight = State()
+    waiting_for_date = State()
 
 # Файл для сохранения био
 BIOS_FILE = "user_bios.json"
@@ -76,7 +78,8 @@ def get_main_keyboard() -> InlineKeyboardMarkup:
     'Функция вызывает кнопки для выбора пользователем'
     keyboard = [
         [
-            InlineKeyboardButton(text="Weight", callback_data="weight"),
+            InlineKeyboardButton(text="Today's entry", callback_data="weight"),
+            InlineKeyboardButton(text="Other date entry", callback_data="old_date"),
             InlineKeyboardButton(text="History", callback_data="history"),
         ]
     ]
@@ -112,6 +115,29 @@ async def handle_weight_button(callback: CallbackQuery, state: FSMContext):
     )
     await callback.answer()
 
+@dp.callback_query(lambda c: c.data == "old_date")
+async def handle_old_date_button(callback: CallbackQuery):
+    # Показываем календарь
+    await callback.message.edit_text(
+        "Please select the date:",
+        reply_markup=await SimpleCalendar().start_calendar()
+    )
+
+@dp.callback_query(SimpleCalendarCallback.filter())
+async def process_simple_calendar(callback: CallbackQuery, callback_data: SimpleCalendarCallback, state: FSMContext):
+    selected, calendar_date = await SimpleCalendar().process_selection(callback, callback_data)
+    if selected:
+        # Сохраняем выбранную дату 
+        await state.update_data(chosen_date=calendar_date.date().isoformat())
+        
+        # Ожидаем выбора ввода вес
+        await state.set_state(UserStates.waiting_for_weight)
+        
+        await callback.message.edit_text(
+            f"Selected date: <b>{calendar_date.strftime('%d.%m.%Y')}</b>\n"
+            f"Now please enter the weight for that day:",
+            parse_mode="HTML"
+        )
 
 @dp.message(UserStates.waiting_for_weight)
 async def process_weight(message: Message, state: FSMContext):
@@ -125,8 +151,13 @@ async def process_weight(message: Message, state: FSMContext):
         if weight <= 0 or weight > 300:
             raise ValueError
 
-        # Получаем текущую дату
-        current_date = datetime.now().date().isoformat()
+        # Получаем значение даты
+        state_data = await state.get_data()
+        target_date = state_data.get("chosen_date")
+
+        # Если даты нет, то берем текущую
+        if not target_date:
+            target_date = datetime.now().date().isoformat()
 
         # Отправка в FastAPI
         async with httpx.AsyncClient() as client:
@@ -135,7 +166,7 @@ async def process_weight(message: Message, state: FSMContext):
                 json={
                     "user_id": message.from_user.id,
                     "weight": weight,
-                    "date": current_date,
+                    "date": target_date, # Uses chosen calendar date or today's date
                     "username": message.from_user.username
                 },
                 timeout=10.0
@@ -144,13 +175,13 @@ async def process_weight(message: Message, state: FSMContext):
         # Возвращаем ответ в зависимости от успеха отправки в FastAPI
         if response.status_code in (200, 201):
             await message.answer(
-                f"Your weight ({weight} kg) has been saved successfully!",
+                f"Your weight ({weight} kg) has been saved successfully for {target_date}!",
                 reply_markup=get_main_keyboard()
             )
         else:
             await message.answer("Failed to save weight. Please try again later.")
 
-        await state.clear()  # Обновляем статус
+        await state.clear()  # Обновляем статус и очищаем данные даты
 
     except ValueError:
         await message.answer("Please enter a valid number.\nExample: 72.3 or 80")
